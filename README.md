@@ -163,7 +163,7 @@ Para la implementación de SonarQube en un proyecto, lo primero que debemos tene
 
 1. **Como primer paso debemos crear nuestro repositorio**
 
-![Alt text](image.png)
+![Alt text](./documentation/SonarQube/image.png)
 
 2. **El segundo paso es configurar nuestro servidor donde va a estar alojado SonarQube, para esto vamos a seguir la siguiente documentación, para este caso se configura en un servidor Windows**
 
@@ -174,91 +174,91 @@ Para la implementación de SonarQube en un proyecto, lo primero que debemos tene
 
 - Para esto nos vamos a nuestro servidor, nos logueamos y se nos va a presentar la siguiente pantalla, donde vamos a seleccionar creacion de un proyecto local.
 
-![Alt text](image-1.png)
+![Alt text](./documentation/SonarQube/image-1.png)
 
 - Luego vamos a darle un nombre personalizado y definir cual será su rama principal y le damos en siguiente
 
-![Alt text](image-2.png)
+![Alt text](./documentation/SonarQube/image-2.png)
 
 - Luego escojemos la base de analisis de codigo en Sonar, damos click en "Crear Proyecto"
 
-![Alt text](image-3.png)
+![Alt text](./documentation/SonarQube/image-3.png)
 
 - Esto nos lleva a la siguiente pantalla donde vamos a seleccionar el metodo de analisis de nuestro proyecto, que en este caso va a ser por medio de Github Actions.
 
-![Alt text](image-4.png)
+![Alt text](./documentation/SonarQube/image-4.png)
 
 - Una vez aquí se nos presentan los pasos que debemos seguir para configurar nuestro proyecto
 
-![Alt text](image-5.png)
+![Alt text](./documentation/SonarQube/image-5.png)
 
 4. **Ahora vamos a proceder a la configuración del repositorio en Github, para eso vamos a seguir todos los pasos que nos presentan en el paso anterior**
 
 - Dentro del repositorio de Github nos vamos a ir a "settings"
 
-![Alt text](image-6.png)
+![Alt text](./documentation/SonarQube/image-6.png)
 
 - Luego en el menu de la izquierda seleccionamos Secrets and variables > actions
 
-![Alt text](image-7.png)
+![Alt text](./documentation/SonarQube/image-7.png)
 
 - En este punto vamos a crear dos nuevos "Repository secrets", para crear el primero damos click en "New repository secret" 
 
-![Alt text](image-8.png)
+![Alt text](./documentation/SonarQube/image-8.png)
 
 - Esto nos va a mostrar un formulario donde debemos establecer la llave y su valor respectivo, para llenar este nos vamos nuevamente al paso a paso de SonarQube y copiamos la llave.
 
-![Alt text](image-10.png)
+![Alt text](./documentation/SonarQube/image-10.png)
 
-![Alt text](image-9.png)
+![Alt text](./documentation/SonarQube/image-9.png)
 
 - Y luego generamos el token.
 
-![Alt text](image-11.png)
+![Alt text](./documentation/SonarQube/image-11.png)
 
-![Alt text](image-12.png)
+![Alt text](./documentation/SonarQube/image-12.png)
 
 - Al final el formulario queda así
 
-![Alt text](image-13.png)
+![Alt text](./documentation/SonarQube/image-13.png)
 
 - Damos click en "Add secret" para guardar esa secret y procedemos a la siguiente, aquí vamos a escoger nuestro servidor donde va a estar alojado el SonarQube. una vez guardamos esta secret pasamos el siguiente paso
 
-![Alt text](image-14.png)
+![Alt text](./documentation/SonarQube/image-14.png)
 
-![Alt text](image-15.png)
+![Alt text](./documentation/SonarQube/image-15.png)
 
 - El siguiente paso consiste en generar los archivos de configuracion "sonar-project.properties" y el "build.yml"
 
-![Alt text](image-16.png)
+![Alt text](./documentation/SonarQube/image-16.png)
 
 - Para esto nos vamos a la vista principal de nuestro repositorio en Github y damos click en el boton de Add file > Create new file.
 
-![Alt text](image-17.png)
+![Alt text](./documentation/SonarQube/image-17.png)
 
 - Una vez aquí vamos a definir la ruta y el contenido de este nuevo fichero y comiteamos el este nuevo cambio
 
-![Alt text](image-18.png)
+![Alt text](./documentation/SonarQube/image-18.png)
 
-![Alt text](image-19.png)
+![Alt text](./documentation/SonarQube/image-19.png)
 
 - Ahora procedemos a crear el "build.yml", hacemos el mismo procedimiento
 
-![Alt text](image-20.png)
+![Alt text](./documentation/SonarQube/image-20.png)
 
 - Una vez hecho esto ya tendríamos nuestra configuración lista, solo nos queda ir a nuestras actions para visualizar la ejecucíon de nuestra Action
 
-![Alt text](image-21.png)
+![Alt text](./documentation/SonarQube/image-21.png)
 
 - Aquí debemos esperar a que termine de ejecutarse 
 
-![Alt text](image-22.png)
+![Alt text](./documentation/SonarQube/image-22.png)
 
-![Alt text](image-23.png)
+![Alt text](./documentation/SonarQube/image-23.png)
 
 - Luego nos dirijimos a nuestro servidor de SonarQube para ver los resultados del analisis del proyecto
 
-![Alt text](image-24.png)
+![Alt text](./documentation/SonarQube/image-24.png)
 
 - Con esto ya tendríamos nuestro proyecto de Github sincronizado en SonarQube
 
